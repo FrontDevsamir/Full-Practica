@@ -1,0 +1,328 @@
+
+
+
+.main {
+    max-width: 1200px;
+    height: calc(100vh + 800px);
+    padding: 40px;
+    margin: auto;
+}
+
+/* PORTADA - COVER */
+.cover {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.cover__info {
+    width: 50%;
+}
+
+.cover__title {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Poppins';
+}
+
+.cover__description {
+    font-size: 16px;
+    color: #444444;
+    margin-top: 40px;
+}
+
+.cover__buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.button--read-more {
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+.button--read-more:hover {
+    background-color: #E8E8E8;
+}
+
+.cover__media {
+    width: 50%;
+}
+
+
+/* BANNER */
+
+.banner {
+    margin-top: 100px;
+    height: 250px;
+
+    display: flex;
+    /* gap: 10px; */
+    border-radius: 8px;
+    align-items: center;
+    background-color: #1211;
+    position: relative;
+}
+
+.banner__icon {
+    width: 350px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.banner__icon-heart {
+    filter: drop-shadow(-40px 0 30px rgb(0 0 0 / .5));
+}
+
+.banner__icon:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.banner__icon-fire {
+    width: 300px;
+    position: relative;
+    margin-top: -100px;
+    opacity: .6;
+}
+
+.banner__info {
+    flex: 1;
+    position: relative;
+    padding-right: 30px;
+    max-width: 450px;
+}
+
+.link_read-more {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.link_read-more:hover {
+    color: #38945e;
+}
+/* FINN BANNER */
+
+/* INICIO TEAM */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+
+.card {
+    width: 300px;
+    transition: width 300ms;
+
+    --top-img: 40px;
+    --bottom-back-img: -80px;
+    --padding-X-desc: 20px;
+}
+
+.card:hover {
+    width: 350px;
+    cursor: pointer;
+
+    --top-img: 0;
+    --bottom-back-img: -40px;
+    --padding-X-desc: 45px;
+}
+
+.card__cover {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    /* border: 2px solid steelblue; */
+}
+
+.card__img {
+    width: 250px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    transition: top 500ms;
+    top: var(--top-img);
+
+    filter: drop-shadow(5px 5px 4px rgb(0 0 0 / .5));
+}
+
+.card__back-img{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: var(--bottom-back-img);
+    left: 0;
+    border-radius: 10px;
+    transition: bottom 400ms;
+}
+
+.card__back-img--one {
+    background-image: url('../resources/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card__back-img--two {
+    background-image: url('../resources/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card__back-img--three {
+    background-image: url('../resources/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__description {
+    background-color: #FFFFFF;
+    padding: 25px var(--padding-X-desc);
+    margin-top: -15px;
+    border-radius: 0 0 20px 10px;
+    transition: padding 300ms;
+    box-shadow: 0 10px 20px rgb(0 0 0 / .1);
+}
+
+.card__title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card__paragraph {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.card__cta {
+    padding: 10px 40px;
+    margin-top: 20px;
+    background-color: #A6359D;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: color 300ms;
+}
+
+.card__cta:hover {
+    background-color: #83277B;
+}
+/* FIN TEAM */
+
+
+/* INICIO SLIDER */
+.carousel {
+    transform-style: preserve-3d;
+    width: 500px;
+    height: 100%;
+    max-height: 600px;
+}
+
+.carousel__container {
+    max-width: 1200px;
+    height: 500px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__title {
+    text-align: center;
+    font-size: 40px;
+    color: #444444;
+    font-weight: 800;
+}
+
+.carousel__cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__card {
+    width: 60%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.carousel__card-img {
+    border-radius: 10px;
+    height: 100%;
+}
+/* FIN SLIDER */
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .banner__icon:nth-child(1) {
+        left: -40px;
+    }
+
+    .cover__media {
+        margin-top: -100px;
+    }
+
+    .banner__info {
+        left: -70px;
+    }
+
+    .banner__icon-fire {
+        right: -80px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .cover__info {
+        width: 100%;
+    }
+
+    .cover__media {
+        display: none;
+    }
+
+    .banner {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .banner__icon:nth-child(2) {
+        display: none;
+    }
+
+    .banner__info {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .banner__info {
+        left: 0;
+        padding: 20px 40px;
+        margin-top: -60px;
+    }
+}

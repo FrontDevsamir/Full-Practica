@@ -1,0 +1,131 @@
+
+
+.banner {
+    background: linear-gradient(280deg,#077eb0 -16%,#08587d 8%,#073750 32%,#07283c 40%,#0a1f2e 90%);
+    color: #FFFFFF;
+    padding: 2rem 1rem 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+
+.banner__title {
+    font-family: Orbitron, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.banner__description {
+    font-size: .8rem;
+}
+
+.banner__title-line-2 {
+    color: #16F4D0;
+}
+
+
+/* MEDIA QUERIS */
+@media screen and (min-width: 1024px) {
+    .banner__title {
+        font-size: 2.5rem;
+    }
+
+    .banner__description {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* INICIO COUNTDOWN */
+.countdown {
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    margin: 2rem 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .countdown {
+        justify-content: start;
+    }
+}
+
+.countdown__item {
+    padding: 0 .75rem;
+    align-items: center;
+    position: relative;
+}
+
+.countdown__item:not(:last-of-type)::before {
+    position: absolute;
+    content: '';
+    display: block;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background-color: #FFFFFF;
+    opacity: .5;
+}
+
+.countdown__number {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-right: .25rem;
+    color: #DFA6F9;
+}
+
+
+.countdown__letter {
+    opacity: .5;
+}
+
+
+/* FORMULARIO */
+.form-container {
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: inline-flex;
+}
+
+
+input {
+    font-family: inherit;
+    box-sizing: border-box;
+    /* height: 2.5rem; */
+}
+
+.form__input {
+    line-height: 2.5rem;
+    width: 15rem;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, .4);
+    padding: 0 .5rem;
+    border-radius: .25rem 00 .25rem;
+}
+
+.form__input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.form__button {
+    padding: 0 1rem;
+    border-radius: 0 .25rem .25rem 0;
+    border: none;
+}
+
+.form-hint {
+    margin: 1rem 0 0;
+    font-size: .7rem;
+}

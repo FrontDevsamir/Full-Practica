@@ -1,0 +1,95 @@
+
+
+.cover {
+    width: 100%;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+
+.container_all {
+    position: relative;
+    right: 0;
+    transition: right 300ms;
+}
+
+.move_body {
+    right: 180px;
+}
+
+.container__cover {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    background-image: url('../images/background-cover.svg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.container__info {
+    max-width: 400px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #373737;
+}
+
+.title__bottom {
+    display: inline-block;
+    color: #FEBA0B;
+}
+
+.paragraph {
+    margin-top: 10px;
+    color: #373737;
+}
+
+.cta {
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FEBA0B;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 300ms;
+}
+
+.cta:hover {
+    box-shadow: 1px 1px 30px -5px #20202065;
+}
+
+
+.container__vector {
+    position: relative;
+}
+
+.vector {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 600px;
+    animation: move_vector 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes move_vector {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+
+.move

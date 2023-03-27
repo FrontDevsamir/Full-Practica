@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size-title: 4rem;
+    --font-size-btn-normal: 1.2rem;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.s-center {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+.bg_animate {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right, #005C98, #505BDA
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.container--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    height: 80px;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+
+.nav__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: calc(100vh - calc(80px + 2rem));
+    gap: 2rem;
+}
+
+.banner__title {
+    color: #FFFFFF;
+    font-size: var(--font-size-title);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+.banner__cta {
+    color: #FFFFFF;
+    font-size: var(--font-size-btn-normal);
+    text-decoration: none;
+    display: inline-block;
+    background-color: #1A2849;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.banner__graphic {
+    width: 300px;
+    animation: move 2s infinite alternate linear;
+}
+
+
+.banner__img {
+    width: 100%;
+}
+
+
+
+/* BUBBLES */
+.bubble {
+    width: 80px;
+    height: 80px;
+    background-color: #FFFFFF;
+    opacity: .3;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -100px;
+    left: 5%;
+
+    animation: bubbles 3s linear infinite;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 4s;
+    animation-delay: 100ms;
+}
+
+.bubble:nth-child(3) {
+    width: 90px;
+    height: 90px;
+    left: 35%;
+    animation-duration: 5s;
+    animation-delay: 300ms;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 400ms;
+    z-index: 1;
+}
+
+.bubble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 90%;
+    animation-duration: 3s;
+    animation-delay: 200ms;
+}
+
+.bubble:nth-child(6) {
+    width: 40px;
+    height: 40px;
+    left: 75%;
+    animation-duration: 3s;
+    animation-delay: 200ms;
+    z-index: 1;
+}
+
+.bubble:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 100ms;
+}
+
+.bubble:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    animation-duration: 3s;
+    animation-delay: 200ms;
+}
+
+
+@keyframes bubbles {
+    30% {
+        transform: translateX(70px);
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translateY(30px);
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .banner__graphic {
+        width: 500px;
+    }
+
+    .banner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .s-center {
+        text-align: left;
+    }
+}

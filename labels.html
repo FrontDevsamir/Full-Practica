@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Esto es un sitio de prueba">
+
+    <meta name="author" content="Yangua Ruiz Samir">
+
+    
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- FAVICON GENERATOR -->
+
+    <!-- OPEN GRAPH PROTOCOL -->
+    <!-- TWITER CARD -->
+
+
+    <title>HTML - PRACTIQUE</title>
+</head>
+<body>
+
+    <!-- elementos para formulario -->
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">File</label>
+                <input type="file" name="" id="">
+            </div>
+
+            <div>
+                <label for="">Combustible</label>
+                <meter id="fuel" min="0" max="100" value="80" low="30" high="90" optimun="80">
+                    
+                </meter>
+            </div>
+
+            <div>
+                <label for="">Tarea Pendiente</label>
+                <progress max="100" value="75">
+
+                </progress>
+            </div>
+        </fieldset>
+    </form>
+
+    <!--Imagenes-->
+    <!-- Device Pixel Ratio -->
+    Relacion reales entre los pixeles reales y los pixeles disponibles para dibujar
+    DPR = pixeles reales / pixeles disponibles
+
+    <!-- Movil -> Su DPR es de 2.*  -->
+
+
+    <!-- USANDO SRCSET -->
+    <h1>Contenido Embebido</h1>
+    <img srcset="
+    ./images/image1.png,
+    ./images/image2.png 3x,
+    ./images/image3.png" alt="">
+
+    <!-- USANDO PICTURE -->
+    <picture>
+        <source srcset="./imagen1.png" media="(max-width: 1200px)">
+        <source srcset="./imagen2.png, ./imagen2.jpg">
+        <source srcset="./imagen3.png">
+
+        <!-- Default -->
+        <img srcset="./imagenDefautl.png" alt="Imagen popr defecto">
+    </picture>
+
+    <!-- IFRAMES -->
+    No abusar de estos porque ralentiza el sitio web
+    Ya que inserta la pagina web
+
+    <!-- FIGURE -->
+    <h2>
+        Gatos
+    </h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi illo magni porro, ab quam at cumque illum, aspernatur magnam amet accusamus. Ut voluptate omnis, accusamus quae ad est nihil tenetur hic illum commodi minima repudiandae iste, quaerat voluptatum quo culpa!
+    </p>
+
+    <figure>
+        <img src="cat.jps" alt="Cat image">
+        <figcaption>Cat simple sleeping</figcaption>
+    </figure>
+
+
+    <!-- ETIQUETAS META -->
+    Ver head 🔼
+
+
+    
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web - Moderna Responsive</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <img class="logo__img" src="./resources/logo-magtimus-small-v2-png.png" alt="Logo de la landing page">
+            </div>
+            
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Soluciones</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Compañia</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contactos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <i class="fa-solid fa-bars icon icon--menu" id="icon_menu"></i>
+            
+            <div class="register header__register">
+                <button class="button button-register">Registrate</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="cover">
+            <div class="cover__info">
+                <h1 class="cover__title">Haz historia. No se limte a informar sobre ello</h1>
+                <p class="cover__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, voluptate minus iure animi, odit velit aliquam at doloremque, facilis ullam soluta voluptates architecto esse ratione beatae perspiciatis veniam molestiae repudiandae? Distinctio qui nemo laudantium exercitationem iste fugit, odio similique. Voluptatem!
+                </p>
+                <div class="cover__buttons">
+                    <button class="button button--register">Registrate</button>
+                    <button class="button button--read-more">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="cover__media">
+                <video src="./resources/media_animacion_cover.webm" class="cover__media-video" autoplay loop muted></video>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="banner__icon">
+                <img src="./resources/heart_notify.png" alt="" class="banner__icon-heart">
+            </div>
+            <div class="banner__icon">
+                <img src="./resources/fire-dynamic-color.png" alt="" class="banner__icon-fire">
+            </div>
+            <div class="banner__info">
+                <p class="banner__description">
+                    La pila moderna de inteligencia de datos en la actualidad es un negocio de misión critica
+                </p>
+                <a href="#" class="link_read-more">Leer mas</a>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="card">
+                <div class="card__cover">
+                    <img src="./resources/p1.png" alt="" class="card__img">
+                    <div class="card__back-img card__back-img--one"></div>
+                </div>
+
+                <div class="card__description">
+                    <h2 class="card__title">Carolina Herrera</h2>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore mollitia, animi error omnis beatae doloremque exercitationem et cumque labore iure.
+                    </p>
+                    <a href="#" class="card__cta">Leer Más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__cover">
+                    <img src="./resources/p2.png" alt="" class="card__img">
+                    <div class="card__back-img card__back-img--two"></div>
+                </div>
+
+                <div class="card__description">
+                    <h2 class="card__title">Elonk Musk</h2>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore mollitia, animi error omnis beatae doloremque exercitationem et cumque labore iure.
+                    </p>
+                    <a href="#" class="card__cta">Leer Más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__cover">
+                    <img src="./resources/p3.png" alt="" class="card__img">
+                    <div class="card__back-img card__back-img--three"></div>
+                </div>
+
+                <div class="card__description">
+                    <h2 class="card__title">Aya Nakamura</h2>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore mollitia, animi error omnis beatae doloremque exercitationem et cumque labore iure.
+                    </p>
+                    <a href="#" class="card__cta">Leer Más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <h2 class="carousel__title">SLIDER 3D CON CSS</h2>
+            <div class="carousel__container">
+                <input type="radio" class="carousel__slider carousel__slider--one" name="slider" id="item-1">
+                <input type="radio" class="carousel__slider carousel__slider--two" name="slider" id="item-2">
+                <input type="radio" class="carousel__slider carousel__slider--three" name="slider" id="item-3">
+
+                <div class="carousel__cards">
+                    <label class="carousel__card" for="item-1">
+                        <img src="./resources/img1.jpg" alt="" class="carousel__card-img">
+                    </label>
+                    <label class="carousel__card" for="item-2">
+                        <img src="./resources/img2.jpg" alt="" class="carousel__card-img">
+                    </label>
+                    <label class="carousel__card" for="item-3 ">
+                        <img src="./resources/img3.jpg" alt="" class="carousel__card-img">
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
