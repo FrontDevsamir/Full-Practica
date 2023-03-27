@@ -1,8 +1,10 @@
 
-
+.aside * {
+    /* outline: 1px solid red; */
+}
 
 .aside {
-    width: 80px;
+    width: calc(25px + 3rem);
     position: fixed;
     height: 100%;
     background-color: #1783DB;
@@ -12,7 +14,7 @@
     transition: width 300ms, left 300ms;
     overflow: hidden;
     overflow-y: auto;
-    border-right: 8px solid #1783DB;
+    /* border-right: 8px solid #1783DB; */
 
     /*Ocultar scroll para IE, Edge y Firefox*/
     -ms-overflow-style: none;
@@ -53,10 +55,6 @@
     margin-right: 1rem;
 }
 
-.nav {
-    padding: 1.5rem 2rem;
-}
-
 .nav__link {
     display: flex;
     align-items: center;
@@ -64,7 +62,7 @@
     position: relative;
     transition: color 300ms;
     font-weight: 100;
-    margin: 2.5rem 0;
+    padding: 1rem 2rem;
 }
 
 .nav__link--active {
@@ -78,11 +76,12 @@
     height: 70%;
     background-color: #FFFFFF;
     top: 15%;
-    left: -2rem;
+    left: 0;
 }
 
 .nav__link:hover {
     color: #FFFFFF;
+    background-color: #0000FF11;
 }
 
 
@@ -97,7 +96,7 @@
 
 @media screen and (max-width: 760px) {
     .aside_move {
-        width: 80px;
+        width: calc(25px + 3rem);
         left: -80px;
     }
 }

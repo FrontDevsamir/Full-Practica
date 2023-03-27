@@ -10,6 +10,7 @@ ICON_MENU.addEventListener('click', () => {
 })
 
 
+
 // ESCUCHAR EL EVENTO RESIZE
 window.addEventListener('resize', () => {
     if (window.innerWidth < 760) {

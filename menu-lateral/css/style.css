@@ -21,26 +21,8 @@ li {
 
 body {
     font-family: 'Poppins';
-    margin-left: 80px;
+    margin-left: calc(25px + 3rem);
     font-size: 16px;
     transition: margin-left 300ms;
 }
 
-
-/* CLASE MANIPULADA DESDE JS */
-.body_move {
-    margin-left: 250px;
-}
-
-
-.main {
-    padding: 1.5rem;
-}
-
-
-
-@media screen and (max-width: 760px) {
-    .body_move {
-        margin-left: 0;
-    }
-}
