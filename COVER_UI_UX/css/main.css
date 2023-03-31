@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -22,8 +23,7 @@
 
 
 .cover__info {
-    flex: 1;
-    min-width: 400px;
+    flex: 1 1 260px;
 }
 
 .cover__title {
@@ -55,7 +55,7 @@
 }
 
 .cover__graphic {
-    flex: 1;
+    flex-grow: 1.5;
 }
 
 .main {
